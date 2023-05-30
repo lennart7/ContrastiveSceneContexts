@@ -2,6 +2,7 @@
 #from lib.datasets import shapenet
 from datasets import stanford 
 from datasets import scannet
+from datasets import atlas
 
 DATASETS = []
 
@@ -13,6 +14,7 @@ def add_datasets(module):
 add_datasets(stanford)
 #add_datasets(synthia)
 add_datasets(scannet)
+add_datasets(atlas)
 #add_datasets(shapenet)
 
 def load_dataset(name):
